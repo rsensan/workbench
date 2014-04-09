@@ -1,0 +1,27 @@
+{
+	"name": "ahsanproducts/testing",
+	"description": "Ahsan Producsts - Testing a Laravel Package.",
+	"license": "BSD-2-Clause",
+	"authors": [
+		{
+		    "name": "Senthil vasan",
+		    "email": "rsensan@gmail.com",
+		    "homepage" : "http://www.agriya.com",
+		    "role" : "Team Leader"
+		}
+	    ],
+	"keywords": ["framework", "laravel"],
+    	"require": {
+		"php": ">=5.3.0",
+		"illuminate/support": "4.0.x"
+	},
+	"autoload": {
+		"classmap": [
+			"src/migrations"
+		],
+		"psr-0": {
+			"Travelpickr\\Mypackage": "src/"
+		}
+	 },
+	"minimum-stability": "dev"
+}
