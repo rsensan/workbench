@@ -1,8 +1,8 @@
-<?php namespace Travelpickr\Mypackage;
+<?php namespace Rsensan\Workbench;
 
 use Illuminate\Support\ServiceProvider;
 
-class MypackageServiceProvider extends ServiceProvider {
+class WorkbenchServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -18,7 +18,7 @@ class MypackageServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('travelpickr/mypackage');
+		$this->package('rsensan/workbench');
 		include __DIR__.'/../../../../../../app/routes.php';
 	}
 
@@ -29,14 +29,14 @@ class MypackageServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['mypackage'] = $this->app->share(function($app)
+		$this->app['workbench'] = $this->app->share(function($app)
 		{
 			return new Mypackage;
 		});
 		$this->app->booting(function()
 		{
 		  $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-		  $loader->alias('Mypackage', 'Travelpickr\Mypackage\Facades\Mypackage');
+		  $loader->alias('Workbench', 'Rsensan\Workbench\Facades\Workbench');
 		});
 	}
 

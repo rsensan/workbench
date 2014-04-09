@@ -1,6 +1,6 @@
-<?php namespace TravelPickr\Mypackage;
+<?php namespace Rsensan\Workbench;
 
-class Mypackage {
+class Workbench {
 
   public static function greeting(){
     return "What up dawg";
