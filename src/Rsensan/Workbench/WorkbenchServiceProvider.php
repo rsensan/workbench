@@ -31,7 +31,7 @@ class WorkbenchServiceProvider extends ServiceProvider {
 	{
 		$this->app['workbench'] = $this->app->share(function($app)
 		{
-			return new Mypackage;
+			return new Workbench;
 		});
 		$this->app->booting(function()
 		{
