@@ -20,7 +20,7 @@
 			"src/migrations"
 		],
 		"psr-0": {
-			"Travelpickr\\Mypackage": "src/"
+			"Rsensan\\Workbench": "src/"
 		}
 	 },
 	"minimum-stability": "dev"
